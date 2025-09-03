@@ -2,7 +2,10 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "allowJs": true,
-    "checkJs": false
+    "checkJs": false,
+    "outDir": "dist",          // <– compiled output goes here
+    "rootDir": "src",          // <– source files stay here
+    "noEmit": true             // if you only use tsc for type-checking
   },
   "include": ["src"]
 }
